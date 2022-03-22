@@ -29,8 +29,16 @@ function updateScreen(){
 
     localStorage.setItem("tarefas", JSON.stringify(array))
 }
-
 function deleteTask(element){
     array = array.filter(object=>object.data != element.getAttribute("data"))
     updateScreen()
+}
+
+//BUTON CARACTERES
+
+function onOver(elemento){
+    elemento.style.backgroundColor = "#AC9CD0"
+}
+function onOut(elemento){
+    elemento.style.backgroundColor = "#efefef"
 }
