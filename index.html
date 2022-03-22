@@ -9,8 +9,9 @@
 <body>
     <div class="container">
         <h1>Lista de Tarefas</h1>
-        <input id="tarefas" name="tarefas" type="text" placeholder="Digite sua Tarefa">
-        <button class="but" onclick="calcular()">Listar</button>
+        <input id="tarefas" data-ls-module="charCounter" maxlength="50" name="tarefas" type="text" placeholder="Digite sua Tarefa">
+        <button class="but" onclick="calcular()" onmouseover="onOver(this)"
+        onmouseout="onOut(this)">Listar</button>
         <div id="resultado"></div>
     </div>
 
